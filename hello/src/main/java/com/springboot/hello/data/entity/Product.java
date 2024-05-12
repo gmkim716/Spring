@@ -16,6 +16,9 @@ public class Product {
     private String name;
 
     @Column(nullable = false)
+    private Long number;
+
+    @Column(nullable = false)
     private Integer price;
 
     @Column(nullable = false)
@@ -38,6 +41,14 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Long getNumber() {
+        return number;
+    }
+
+    public void setNumber(Long number) {
+        this.number = number;
     }
 
     public Integer getPrice() {
